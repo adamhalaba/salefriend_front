@@ -95,7 +95,7 @@ with form:
 # When form is submitted, preprocess input data and get model predictions
 if submit_button:   #request.get
 
-    prediction = requests.post(url = "http://127.0.0.1:8001/predict", data = json.dumps(input_fields))
+    prediction = requests.post(url = "https://salefriendapi-v2kc5x666a-ew.a.run.app/predict", data = json.dumps(input_fields))
     #print(prediction.json())
     prediction = prediction.json()['Probability of Booking']
 
